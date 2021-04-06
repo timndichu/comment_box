@@ -12,6 +12,7 @@ class CommentBox extends StatelessWidget {
   String errorText;
   Widget sendWidget;
   Color backgroundColor;
+  Color avatarBackgroundColor;
   Color textColor;
   bool withBorder;
   Widget header;
@@ -26,6 +27,7 @@ class CommentBox extends StatelessWidget {
       this.userImage,
       this.labelText,
       this.focusNode,
+       this.avatarBackgroundColor,
       this.errorText,
       this.withBorder = true,
       this.backgroundColor,
@@ -45,7 +47,7 @@ class CommentBox extends StatelessWidget {
           leading: Container(
             height: 40.0,
             width: 40.0,
-            decoration: new BoxDecoration(color: Colors.blue, borderRadius: new BorderRadius.all(Radius.circular(50))),
+            decoration: new BoxDecoration(color: avatarBackgroundColor, borderRadius: new BorderRadius.all(Radius.circular(50))),
             child: CircleAvatar(radius: 50, backgroundImage: NetworkImage(userImage)),
           ),
           title: Form(
