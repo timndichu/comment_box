@@ -47,7 +47,7 @@ class CommentBox extends StatelessWidget {
           leading: Container(
             height: 40.0,
             width: 40.0,
-            decoration: new BoxDecoration(color: avatarBackgroundColor, borderRadius: new BorderRadius.all(Radius.circular(50))),
+            decoration: new BoxDecoration(color: avatarBackgroundColor ?? Colors.blue, borderRadius: new BorderRadius.all(Radius.circular(50))),
             child: CircleAvatar(radius: 50, backgroundImage: NetworkImage(userImage)),
           ),
           title: Form(
