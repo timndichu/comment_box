@@ -27,7 +27,7 @@ class CommentBox extends StatelessWidget {
       this.userImage,
       this.labelText,
       this.focusNode,
-       this.avatarBackgroundColor,
+      this.avatarBackgroundColor,
       this.errorText,
       this.withBorder = true,
       this.backgroundColor,
